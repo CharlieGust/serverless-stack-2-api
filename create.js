@@ -14,7 +14,7 @@ export async function main(event, context, callback) {
       createdAt: Date.now()
     }
   };
-hejsan.wat;
+
   try {
     await dynamoDbLib.call("put", params);
     callback(null, success(params.Item));
